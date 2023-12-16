@@ -1,0 +1,90 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(14, 14, 14, 0.565),
+      80%,
+      rgba(72, 71, 71, 0.228)
+    ),
+    url(world\ bg.jpg);
+}
+.container {
+  background-color: white;
+  width: 40vw;
+  position: absolute;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 50px 40px;
+}
+.search-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.25em;
+}
+.search-wrapper input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(41, 41, 155);
+  padding: 0 0.62em;
+  font-size: 1em;
+}
+.search-wrapper button {
+  font-size: 1em;
+  background-color: rgb(41, 41, 155);
+  color: white;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 1.5em;
+}
+#result {
+  margin-top: 1.25em;
+}
+.container .flag-img {
+  display: block;
+  width: 45%;
+  min-width: 7.5em;
+  margin: 1.8em auto 1.2em auto;
+}
+.container h2 {
+  font-weight: 600;
+  color: #222a43;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.8em;
+}
+.data-wrapper {
+  margin-bottom: 1em;
+  letter-spacing: 0.3px;
+}
+.container h4 {
+  display: inline;
+  font-weight: 500;
+  color: #222a43;
+}
+.container span {
+  color: #5d6274;
+}
+.container h3 {
+  text-align: center;
+}
+.load {
+  animation: 3s change infinite;
+  color: #5d6274;
+  font-family: sans-serif;
+}
+@keyframes change {
+  100% {
+    opacity: 0;
+  }
+}
